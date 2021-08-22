@@ -1,13 +1,13 @@
 function logsNumbers(a, b) {
     for (let i = a; i <= b; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
-            console.log('Jackpot!')
+            console.log(i + 'Jackpot!')
         }
         else if (i % 3 == 0) {
-            console.log('This is divisible by 3')
+            console.log(i + 'This is divisible by 3')
         }
         else if (i % 5 == 0) {
-            console.log('This is divisible by 5')
+            console.log(i + 'This is divisible by 5')
         }
         else {
             console.log(i)
