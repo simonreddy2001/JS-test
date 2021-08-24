@@ -22,23 +22,26 @@ btn.innerHTML = 'click me to get random IMAGE'
 body.appendChild(btn)
 const div = document.createElement('div')
 body.appendChild(div)
-btn.addEventListener('click', () => {
+btn.addEventListener('click', getRandomImage)
+function getRandomImage() {
+    console.log('hi')
     const img = document.createElement('img')
     div.innerHTML = ''
     div.appendChild(img)
     const photoId = Math.floor(Math.random() * 100)
     img.src = `https://picsum.photos/id/${photoId}/400`
-})
+}
+
+
 
 fetch('https://reqres.in/api/users')
     .then(response => response.json())
     .then(data => {
         console.log(data);
-
         body.appendChild(document.createElement('h1'))
         const title = document.querySelector('h1')
         title.innerHTML = `First three users are:`
-        const users = data.data.filter(user => user.id < 4)
+        const users = data.data.slice(0, 3)
         users.forEach(element => {
             const li = document.createElement('li')
             body.appendChild(li);
