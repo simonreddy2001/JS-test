@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nordic Baristacup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="24test.css" type="text/css">
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="index.html"><img src="src/img/logo.jpg" class="logo"></a>
+    <lable class="header-label">ABOUT NBC</lable>
+    <label class="header-label">2011 EVENT</label>
+    <label class="header-label">NODRIC ROASTER</label>
+    <label class="header-label">RESULTS</label>
+    <label class="header-label">LINKS</label>
+    <label class="header-label">CONTACT</label>
+    <div class="search-bar">
+      <button class="search-button"><i class="fa fa-search"></i></button>
+      <input type="text" class="search-input" placeholder="Search..." />
+    </div>
+  </div>
+
+  <!-- Slider -->
+  <div class="slide-container">
+    <div class="slide-img-container">
+      <img src="src/img/slider1.jpg" class="slider-img" />
+      <img src="src/img/slider2.jpg" class="slider-img" />
+      <img src="src/img/slider3.jpg" class="slider-img" />
+      <img src="src/img/slider4.jpg" class="slider-img" />
+      <img src="src/img/slider5.jpg" class="slider-img" />
+      <img src="src/img/slider6.jpg" class="slider-img" />
+    </div>
+
+    <div class="slider-button-container">
+      <span class="slider-button" onclick="showSlide(0)"></span>
+      <span class="slider-button" onclick="showSlide(1)"></span>
+      <span class="slider-button" onclick="showSlide(2)"></span>
+      <span class="slider-button" onclick="showSlide(3)"></span>
+      <span class="slider-button" onclick="showSlide(4)"></span>
+      <span class="slider-button" onclick="showSlide(5)"></span>
+    </div>
+  </div>
+
+  <!-- Back bar -->
+  <div class="back-bar">
+    <div style="position: relative; overflow:auto">
+      <div class="quote">
+        <h2>&ldquo;To create an environment in which knowledge <br>
+          about cofee and its sphere can be obtained&rdquo;</h2>
+      </div>
+      <div class="social-icons-container">
+        <a href="#"><img src="src/img/twitter.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/facebook.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/wifi.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/fire.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/mail.jpg" class="social-icon"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- body of website-->
+  <div class="body-container">
+
+    <div style="position: relative; overflow:auto">
+      <!-- Side bar -->
+      <div class="side-bar">
+        <h2>NBC Shop</h2>
+        <p>
+          You shopping cart is empty<br />
+          <a>Visit the shop</a>
+          <br /><br>
+        </p>
+        <h2>Next Event</h2>
+        <p>
+          NORDIC BARISTA CUP 2011<br />
+          Copenhagen, Denmark<br />
+          Dates: 25th - 27th August 2011<br />
+          Theme: SENSORY<br />
+          <br>
+          <a>Sign up now.</a>
+          <br /> <br>
+        </p>
+        <h2>ScoreBoard</h2>
+        <p>
+          List of winners from past years <br />
+          <br />
+          2011 - ?<br />
+          2010 - Sweden<br />
+          2009 - Denmark<br />
+          2007 - Sweden<br />
+          2006 - Norway<br />
+          2005 - Norway<br />
+          2004 - Denmark<br />
+        </p>
+      </div>
+
+      <!-- Articles:  -->
+      <div class="article-container" id="page1">
+        <article class="article">
+          <img src="src/img/art1.jpg" alt="">
+          <h2>Wonderful Copenhagen 2011</h2>
+          <a>Posted: 23/1-2011</a>
+          <p>
+            The aim is to understand the science behind our sensory perceptions.
+            And by stimulating the senses we will improve our tasting skills.
+            Therefore the program will be a mix of aroma sessions, basic tast theory
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. </a>
+          </p>
+          <button onclick="readMore(0)">Read more</button>
+        </article>
+
+        <article class="article">
+          <img src="src/img/art2.jpg" alt="">
+          <h2>Nordic Barista Cup 2011 in Copenhagen</h2>
+          <a>Posted: 22/1-2011</a>
+          <p>
+            Nordic Barista Cup 2011 will be held in Copenhagen, Denmark.
+            Dates: 25th-27th August 2011. The theme for the 2011 seminar is:
+            SENSORY. More information will follow on this page
+            <a class="three-dots">...</a>
+            <a class="hidden-text"> Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.</a>
+          </p>
+          <button onclick="readMore(1)">Read more</button>
+        </article>
+
+        <article class="article">
+          <img src="src/img/art3.jpg" alt="">
+          <h2>2011 Winners: Sweden</h2>
+          <a>Posted: 12/1-2011</a>
+          <p>
+            Oh my goodness, the filan night is here!
+            We are at the most incredible location in all of Oslo-
+            well, at least that is what I think, since I havent seen much of anything else around here
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.</a>
+          </p>
+          <button onclick="readMore(2)">Read more</button>
+        </article>
+      </div>
+
+      <!-- Article page 2 -->
+      <div class="article-container" id="page2">
+        <article class="article">
+          <img src="src/img/art1.jpg" alt="">
+          <h2>Dummy Article 1</h2>
+          <a>Posted: 20/1-2009</a>
+          <p>
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. </a>
+          </p>
+          <button onclick="readMore(3)">Read more</button>
+        </article>
+
+        <article class="article">
+          <img src="src/img/art1.jpg" alt="">
+          <h2>Dummy Article 2</h2>
+          <a>Posted: 20/8-2008</a>
+          <p>
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. </a>
+          </p>
+          <button onclick="readMore(4)">Read more</button>
+        </article>
+
+        <article class="article">
+          <img src="src/img/art1.jpg" alt="">
+          <h2>Dummy Article 3</h2>
+          <a>Posted: 20/1-2008</a>
+          <p>
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. </a>
+          </p>
+          <button onclick="readMore(5)">Read more</button>
+        </article>
+      </div>
+
+      <!-- Article page 3 -->
+      <div class="article-container" id="page3">
+        <article class="article">
+          <img src="src/img/art1.jpg" alt="">
+          <h2>Dummy Article 4</h2>
+          <a>Posted: 20/12-2007</a>
+          <p>
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. </a>
+          </p>
+          <button onclick="readMore(6)">Read more</button>
+        </article>
+
+        <article class="article">
+          <img src="src/img/art1.jpg" alt="">
+          <h2>Dummy Article 5</h2>
+          <a>Posted: 2/8-2007</a>
+          <p>
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. </a>
+          </p>
+          <button onclick="readMore(7)">Read more</button>
+        </article>
+
+        <article class="article">
+          <img src="src/img/art1.jpg" alt="">
+          <h2>Dummy Article 6</h2>
+          <a>Posted: 20/1-2007</a>
+          <p>
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+            <a class="three-dots">...</a>
+            <a class="hidden-text">Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text.
+              Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. </a>
+          </p>
+          <button onclick="readMore(8)">Read more</button>
+        </article>
+      </div>
+    </div>
+
+    <div class="change-page-button-container">
+      <span class="page-of">Page 1 of 3</span>
+      <button onclick="changePage(0)" class="page-button-active page-button">1</button>
+      <button onclick="changePage(1)" class="page-button-inactive page-button">2</button>
+      <button onclick="changePage(2)" class="page-button-inactive page-button">3</button>
+      <button name="next" onclick="nextPage()">>></button>
+    </div>
+
+    <div class="sponsor-container">
+      <h2>Nordic Barista Cup Sponsors</h2>
+      <table class="sponsor-table" cellspacing="15">
+        <tr>
+          <td><img src="src/img/sponsor1.jpg" style="height:40px" /></td>
+          <td><img src="src/img/sponsor2.png" /></td>
+          <td><img src="src/img/sponsor3.png" /></td>
+          <td><img src="src/img/sponsor4.png" /></td>
+          <td><img src="src/img/sponsor5.jpg" /></td>
+          <td><img src="src/img/sponsor6.jpg" style="height:40px" /></td>
+        </tr>
+        <tr>
+          <td><img src="src/img/sponsor7.gif" style="height:40px" /></td>
+          <td><img src="src/img/sponsor8.png" /></td>
+          <td><img src="src/img/sponsor9.png" /></td>
+          <td><img src="src/img/sponsor10.jpeg" style="height:40px" /></td>
+          <td><img src="src/img/sponsor11.jpg" /></td>
+          <td><img src="src/img/sponsor12.jpeg" /></td>
+        </tr>
+        <tr>
+          <td><img src="src/img/sponsor13.png" /></td>
+          <td><img src="src/img/sponsor14.jpg" /></td>
+          <td><img src="src/img/sponsor15.jpg" /></td>
+          <td><img src="src/img/sponsor16.png" /></td>
+          <td><img src="src/img/sponsor17.png" /></td>
+          <td><img src="src/img/sponsor18.png" /></td>
+        <tr>
+          <td><img src="src/img/sponsor19.jpg" /></td>
+          <td><img src="src/img/sponsor20.jpg" /></td>
+          <td><img src="src/img/sponsor21.gif" /></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+
+    <div class="about">
+      <h2>About Nordic Barista Cup</h2>
+      <p>
+        The vision within the Nordic Barisa cup is:
+      </p>
+      <a>"To create an environment in which knowledge<br />
+        about cofee and its sphere can be obtained"</a>
+      <p>
+        "...create an environment..."<br>
+        Combined with the personally absorption having <br />
+        the opportunity to see and experince countries,<br>
+        people, traditions etc. will allways serve as a <br>
+        source of inspiration in our daily work. <br>
+        The orginization behind the Nordic Barista Cup <br>
+        see it as its main purpose to be a part of creating <br>
+        this forum in which people can meet, bond and <br>
+        achieve further knowledge.
+      </p>
+    </div>
+
+    <div class="flickr">
+      <h2>NBC Flickr Stream</h2>
+      <img src="src/img/flickr.jpg" alt="Flickr stream" class="flickr-img">
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <a>Nordic Barista Cup</a>
+      <p>
+        Amagertov 13 <br>
+        1160 Copenhagen K <br>
+        +45 33 12 04 28 <br>
+        CVR: 11427693 <br>
+        Email: bbrend@nordicbaristacup.com
+      </p>
+
+      <div class="social-icons-container" style="margin-top: 25px;">
+        <a href="#"><img src="src/img/twitter.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/facebook.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/wifi.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/fire.jpg" class="social-icon"></a>
+        <a href="#"><img src="src/img/mail.jpg" class="social-icon"></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="24js.js" type="text/javascript"></script>
+</body>
+
+</html>
